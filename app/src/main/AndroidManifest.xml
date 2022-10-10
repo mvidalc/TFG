@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testdaltonismo">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front.autofocus" android:required="false"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TestDaltonismo">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CameraActivity" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".Plate1Activity" />
+        <activity android:name=".Plate2Activity" />
+        <activity android:name=".Plate3Activity" />
+        <activity android:name=".Plate4Activity" />
+        <activity android:name=".Plate5Activity" />
+        <activity android:name=".Plate6Activity" />
+        <activity android:name=".Plate7Activity" />
+        <activity android:name=".Plate8Activity" />
+        <activity android:name=".Plate9Activity" />
+        <activity android:name=".Plate10Activity" />
+        <activity android:name=".Plate11Activity" />
+        <activity android:name=".Plate12Activity" />
+        <activity android:name=".Plate13Activity" />
+        <activity android:name=".Plate14Activity" />
+        <activity android:name=".Plate15Activity" />
+        <activity android:name=".Plate16Activity" />
+        <activity android:name=".Plate17Activity" />
+        <activity android:name=".AfterTestActivity" />
+        <activity android:name=".DetallesTestActivity" />
+        <activity android:name=".Camera2Activity"/>
+        <activity android:name=".AjustesCamaraActivity"/>
+    </application>
+
+</manifest>

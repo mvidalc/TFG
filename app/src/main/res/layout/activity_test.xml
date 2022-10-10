@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+    <Button
+        android:id="@+id/btnEmpezarTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comenzar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descResText"
+        app:layout_constraintVertical_bias="0.412" />
+
+    <TextView
+        android:id="@+id/titleResText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test de Ishihara"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDuracion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.889" />
+
+    <TextView
+        android:id="@+id/descResText"
+        android:layout_width="292dp"
+        android:layout_height="343dp"
+        android:layout_marginBottom="204dp"
+        android:text="A continuación se mostrarán unas imágenes con un número en su interior. \n\nDebe introducir el número que aparece dentro del círculo. En caso de que no vea ningún numero, simplemente pulse Siguiente. \n\nSe recomienda realizar esta prueba en unas condiciones de luz óptimas, que asemejen la luz del día. El uso excesivo de luz artificial puede dificultar la visión en alguna de las imágenes. \n\nEn las últimas dos imágenes, en el caso de distinguir únicamente uno de los dos dígitos del número, indique únicamente el valor del dígito que distingue con más facilidad. \n\nEl test consta de 17 imágenes."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Atrás"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDuracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Duración aproximada: 3-6 minutos"
+        app:layout_constraintBottom_toTopOf="@+id/descResText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
