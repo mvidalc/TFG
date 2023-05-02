@@ -26,18 +26,18 @@ public class AjustesCamaraActivity extends AppCompatActivity {
         configureToggleButtonsColor();
         configureToggleButtonsTipo();
 
+        configureDebugONButton();
+        configureDebugOFFButton();
+
     }
 
     private void configureToggleButtonsModo() {
 
         Button btnFiltro = (Button) findViewById(R.id.btnFiltro);
         Button btnBN = (Button) findViewById(R.id.btnBN);
-        //Button btnBordes = (Button) findViewById(R.id.btnBordes);
 
         if (GlobalVariables.modoBN) {
             btnBN.performClick();
-        } else if (GlobalVariables.modoBordes) {
-            //btnBordes.performClick();
         } else {
             btnFiltro.performClick();
         }
@@ -51,8 +51,6 @@ public class AjustesCamaraActivity extends AppCompatActivity {
                         GlobalVariables.setModoFiltro();
                     } else if (checkedId == R.id.btnBN) {
                         GlobalVariables.setModoBN();
-                   // } else if (checkedId == R.id.btnBordes) {
-                     //   GlobalVariables.setModoBordes();
                     }
                 }
             }
@@ -140,6 +138,26 @@ public class AjustesCamaraActivity extends AppCompatActivity {
             public void onClick(View view) {
                 startActivity(new Intent(AjustesCamaraActivity.this, Camera2Activity.class));
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+            }
+        });
+    }
+
+    private void configureDebugONButton(){
+        Button debugONButton = (Button) findViewById(R.id.btnDebugON);
+        debugONButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                GlobalVariables.debbugerMode = true;
+            }
+        });
+    }
+
+    private void configureDebugOFFButton(){
+        Button debugOFFButton = (Button) findViewById(R.id.btnDebugOFF);
+        debugOFFButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                GlobalVariables.debbugerMode = false;
             }
         });
     }

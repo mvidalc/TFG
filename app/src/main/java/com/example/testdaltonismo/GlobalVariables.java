@@ -13,10 +13,10 @@ public class GlobalVariables {
     public static Boolean camaraDeuteran = false;
     public static Boolean modoFiltro = false;
     public static Boolean modoBN = false;
-    public static Boolean modoBordes = false;
     public static Boolean testDone = false;
-
     public static String colorSeleccionado = "rosa";
+    public static Boolean paso1 = false, paso2 = false, paso3 = false, paso4 = false, paso5 = false, paso6 = false, paso7 = false, paso8 = false, paso9 = false, paso10 = false;
+    public static Boolean debbugerMode = false;
 
 
     public static void setCamaraProtan(){
@@ -32,19 +32,141 @@ public class GlobalVariables {
     public static void setModoFiltro(){
         modoFiltro = true;
         modoBN = false;
-        modoBordes = false;
     }
 
     public static void setModoBN(){
         modoFiltro = false;
         modoBN = true;
-        modoBordes = false;
     }
 
-    public static void setModoBordes(){
-        modoFiltro = false;
-        modoBN = false;
-        modoBordes = true;
+    public static void setPaso1() {
+        paso1 = true;
+        paso2 = false;
+        paso3 = false;
+        paso4 = false;
+        paso5 = false;
+        paso6 = false;
+        paso7 = false;
+        paso8 = false;
+        paso9 = false;
+        paso10 = false;
+    }
+
+    public static void setPaso2() {
+        paso1 = false;
+        paso2 = true;
+        paso3 = false;
+        paso4 = false;
+        paso5 = false;
+        paso6 = false;
+        paso7 = false;
+        paso8 = false;
+        paso9 = false;
+        paso10 = false;
+    }
+
+    public static void setPaso3() {
+        paso1 = false;
+        paso2 = false;
+        paso3 = true;
+        paso4 = false;
+        paso5 = false;
+        paso6 = false;
+        paso7 = false;
+        paso8 = false;
+        paso9 = false;
+        paso10 = false;
+    }
+
+    public static void setPaso4() {
+        paso1 = false;
+        paso2 = false;
+        paso3 = false;
+        paso4 = true;
+        paso5 = false;
+        paso6 = false;
+        paso7 = false;
+        paso8 = false;
+        paso9 = false;
+        paso10 = false;
+    }
+
+    public static void setPaso5() {
+        paso1 = false;
+        paso2 = false;
+        paso3 = false;
+        paso4 = false;
+        paso5 = true;
+        paso6 = false;
+        paso7 = false;
+        paso8 = false;
+        paso9 = false;
+        paso10 = false;
+    }
+
+    public static void setPaso6() {
+        paso1 = false;
+        paso2 = false;
+        paso3 = false;
+        paso4 = false;
+        paso5 = false;
+        paso6 = true;
+        paso7 = false;
+        paso8 = false;
+        paso9 = false;
+        paso10 = false;
+    }
+
+    public static void setPaso7() {
+        paso1 = false;
+        paso2 = false;
+        paso3 = false;
+        paso4 = false;
+        paso5 = false;
+        paso6 = false;
+        paso7 = true;
+        paso8 = false;
+        paso9 = false;
+        paso10 = false;
+    }
+
+    public static void setPaso8() {
+        paso1 = false;
+        paso2 = false;
+        paso3 = false;
+        paso4 = false;
+        paso5 = false;
+        paso6 = false;
+        paso7 = false;
+        paso8 = true;
+        paso9 = false;
+        paso10 = false;
+    }
+
+    public static void setPaso9() {
+        paso1 = false;
+        paso2 = false;
+        paso3 = false;
+        paso4 = false;
+        paso5 = false;
+        paso6 = false;
+        paso7 = false;
+        paso8 = false;
+        paso9 = true;
+        paso10 = false;
+    }
+
+    public static void setPaso10() {
+        paso1 = false;
+        paso2 = false;
+        paso3 = false;
+        paso4 = false;
+        paso5 = false;
+        paso6 = false;
+        paso7 = false;
+        paso8 = false;
+        paso9 = false;
+        paso10 = true;
     }
 
 }

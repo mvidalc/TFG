@@ -121,7 +121,6 @@ android {
             manifest.srcFile 'java/AndroidManifest.xml'
         }
     }
-    buildToolsVersion '30.0.2'
 }
 
 dependencies {
