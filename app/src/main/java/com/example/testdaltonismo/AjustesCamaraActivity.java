@@ -26,8 +26,8 @@ public class AjustesCamaraActivity extends AppCompatActivity {
         configureToggleButtonsColor();
         configureToggleButtonsTipo();
 
-        configureDebugONButton();
-        configureDebugOFFButton();
+        //configureDebugONButton();
+        //configureDebugOFFButton();
 
     }
 
@@ -142,6 +142,7 @@ public class AjustesCamaraActivity extends AppCompatActivity {
         });
     }
 
+    /*
     private void configureDebugONButton(){
         Button debugONButton = (Button) findViewById(R.id.btnDebugON);
         debugONButton.setOnClickListener(new View.OnClickListener() {
@@ -161,4 +162,6 @@ public class AjustesCamaraActivity extends AppCompatActivity {
             }
         });
     }
+
+     */
 }

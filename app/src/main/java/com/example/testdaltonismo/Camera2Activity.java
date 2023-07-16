@@ -71,8 +71,8 @@ public class Camera2Activity extends AppCompatActivity implements CameraBridgeVi
 
     private void setModo() {
         if (GlobalVariables.camaraDeuteran) {
-            scalarLow = new Scalar(40,75,30);
-            scalarHigh = new Scalar(80,255,255);
+            scalarLow = new Scalar(40,60,55);
+            scalarHigh = new Scalar(95,255,255);
         } else {
             scalarLow = new Scalar(112,90,90);
             scalarHigh = new Scalar(128,255,255);
@@ -300,6 +300,7 @@ public class Camera2Activity extends AppCompatActivity implements CameraBridgeVi
 
         // devolvemos únicamente toda la imagen excepto los colores en el rango
         return mat10;
+
     }
 
     @Override

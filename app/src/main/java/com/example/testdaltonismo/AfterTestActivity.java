@@ -96,11 +96,11 @@ public class AfterTestActivity extends AppCompatActivity {
         if (aciertos  >= 13) {
             textView.setText("Visión Normal\n\nPara mostrar las funcionalidades de la aplicación,\n" +
                     " se aplicará la corrección de color \n" +
-                    "para personas con Protanopia");
-            GlobalVariables.setCamaraProtan();
+                    "para personas con Deuteranopia");
+            GlobalVariables.setCamaraDeuteran();
         } else {
             sb.append("Daltonismo\n");
-            GlobalVariables.setCamaraProtan();
+            GlobalVariables.setCamaraDeuteran();
             if (deuteran && !protan){
                 sb.append("\nDiscromatopsia: Deuteranopia\n");
                 sb.append("\nDificultad a la hora de visualizar tonalidades verdes");
@@ -114,7 +114,7 @@ public class AfterTestActivity extends AppCompatActivity {
             if ((!deuteran && !protan) || (deuteran && protan)) {
                 sb.append("\n\nComo no se ha podido determinar\n" +
                         " el tipo de daltonismo utilizando el test\n" +
-                        "se inicializará la cámara para el caso de Protanopia\n" +
+                        "se inicializará la cámara para el caso de Deuteranopia\n" +
                         "(Puede cambiar el tipo en la ventana de Ajustes de la cámara)");
             }
             textView.setText(sb.toString());

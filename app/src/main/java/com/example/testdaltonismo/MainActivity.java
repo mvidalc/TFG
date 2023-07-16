@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         configureTestButton();
         configureCamaraButton();
 
+        /*
         configurePaso1Button();
         configurePaso2Button();
         configurePaso3Button();
@@ -39,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         configurePaso8Button();
         configurePaso9Button();
         configurePaso10Button();
+
+         */
     }
 
     private void configureTestButton(){
@@ -77,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /*
     private void configurePaso1Button(){
         Button paso1Button = (Button) findViewById(R.id.btnPaso1);
 
@@ -266,4 +270,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+     */
 }

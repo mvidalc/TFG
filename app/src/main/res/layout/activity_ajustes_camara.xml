@@ -11,7 +11,7 @@
         android:id="@+id/btnBack2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Atrás"
+        android:text="Aplicar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.049"
@@ -212,7 +212,7 @@
         android:id="@+id/txtExplicacionModo"
         android:layout_width="287dp"
         android:layout_height="105dp"
-        android:text="Filtros: Aplica un filtro del color seleccionado sobre los colores conflictivos. \n\n Monocromático: muestra toda la pantalla en blanco y negro excepto los colores conflictivos. "
+        android:text="Filtros: Aplica un filtro del color seleccionado sobre los colores conflictivos. \n\nMonocromático: muestra toda la pantalla en blanco y negro excepto los colores conflictivos. "
         app:layout_constraintBottom_toTopOf="@+id/toggleBtns"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -223,7 +223,7 @@
         android:id="@+id/txtExplicacionColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Selecciona el color para el modo Filtros"
+        android:text="Selecciona el color para el modo FILTROS"
         app:layout_constraintBottom_toTopOf="@+id/toggleBtnsColores"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
@@ -278,6 +278,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTipo" />
 
+    <!--
     <Button
         android:id="@+id/btnDebugON"
         android:layout_width="wrap_content"
@@ -299,5 +300,6 @@
         app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toEndOf="@+id/btnDebugON"
         app:layout_constraintTop_toBottomOf="@+id/toggleBtnsTipo" />
+        -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
